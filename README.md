@@ -10,8 +10,10 @@ This is a familiar sliding navigation menu. But this one's special: it's both [s
 
 ### Compatibility
 
-This works perfectly in all the good browsers: Chrome, Firefox, Safari, and Opera.
+This works perfectly in all the good browsers: Chrome, Firefox, Safari, and Opera. It also utilizes the [iOS :hover double-click feature][click].
 
-IE, on the other hand, falls a bit short. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). What this means is that the submenu will just 'pop' into existence on IE, instead of sliding.
+[click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
+
+IE, on the other hand, has some problems. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). What this means is that the submenu will just 'pop' into existence on IE, instead of sliding.
 
 I hope you like it.
