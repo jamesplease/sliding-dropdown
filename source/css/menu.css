@@ -39,10 +39,15 @@ nav {
 }
 
 
-/* This transition is for iOS hover recognition */
+/************
+
+This transition is for iOS hover recognition.
+http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/
+
+************/
 
 #nav > li:hover ul {
-  z-index: 1005;
+  z-index: 1001;
   visibility: visible;
   -webkit-transition-delay: 0;
   -moz-transition-delay: 0s;
@@ -50,12 +55,12 @@ nav {
   transition-delay: 0;
 }
 #nav ul {
-  visibility: hidden;
-  z-index: 1000;
+  top: 46px;
   width: 170px;
   position: absolute;
-  top: 46px;
   background-color: #fff;
+  z-index: 1000;
+  visibility: hidden;
   -webkit-transition-property: visibility;
   -moz-transition-property: visibility;
   -o-transition-property: visibility;
@@ -75,9 +80,8 @@ nav {
 /* The slide */
 
 #nav li li {
-  overflow: hidden;
-  padding: 0px 30px;
   height: 0px;
+  padding: 0px 30px;
   opacity: 0;
   -webkit-transition-property: height, padding, opacity;
   -moz-transition-property: height, padding, opacity;
@@ -89,13 +93,13 @@ nav {
   -o-transition-duration: .25s, .25s, .08s;
   transition-duration: .25s, .25s, .08s;
 
-  -webkit-transition-delay: 0s, 0s, .05s;
+  -webkit-transition-delay: 0, 0, .05s;
   -moz-transition-delay: 0s, 0s, .05s;
-  -o-transition-delay: 0s, 0s, .05s;
-  transition-delay: 0s, 0s, .05s;
+  -o-transition-delay: 0, 0, .05s;
+  transition-delay: 0, 0, .05s;
 }
 #nav li:hover li {
-  opacity: 1;
   height: 20px;
   padding: 13px 30px;
+  opacity: 1;
 }
