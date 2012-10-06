@@ -14,6 +14,6 @@ This works perfectly in all the good browsers: Chrome, Firefox, Safari, and Oper
 
 [click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
 
-IE, on the other hand, has some problems. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). What this means is that the submenu will just 'pop' into existence on IE, instead of sliding.
+IE, on the other hand, has some problems. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). What this means is that the submenu will just 'pop' into existence instead of sliding.
 
 I hope you like it.
