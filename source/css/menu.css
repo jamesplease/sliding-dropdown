@@ -9,6 +9,7 @@ body {
 ul { list-style: none; padding: 0; margin: 0;}
 
 /* Style */
+
 a {
   color: #000;
   display: block;
@@ -37,25 +38,64 @@ nav {
   height: 20px;
 }
 
-/* Function */
+
+/* This transition is for iOS hover recognition */
 
 #nav > li:hover ul {
-  top: 46px;
-}
-#nav li li a {
-  overflow: hidden;
-  padding: 0 30px;
-  height: 0;
-  -webkit-transition-property: height, padding;
-  -webkit-transition-duration: .2s;
-}
-#nav li:hover li a {
-  height: 20px;
-  padding: 13px 30px;
+  z-index: 1005;
+  visibility: visible;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0;
+  transition-delay: 0;
 }
 #nav ul {
+  visibility: hidden;
   z-index: 1000;
   width: 170px;
   position: absolute;
+  top: 46px;
   background-color: #fff;
+  -webkit-transition-property: visibility;
+  -moz-transition-property: visibility;
+  -o-transition-property: visibility;
+  transition-property: visibility;
+
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: .0;
+  transition-duration: 0;
+
+  -webkit-transition-delay: .25s;
+  -moz-transition-delay: .25s;
+  -o-transition-delay: .25s;
+  transition-delay: .25s;
+}
+
+/* The slide */
+
+#nav li li {
+  overflow: hidden;
+  padding: 0px 30px;
+  height: 0px;
+  opacity: 0;
+  -webkit-transition-property: height, padding, opacity;
+  -moz-transition-property: height, padding, opacity;
+  -o-transition-property: height, padding, opacity;
+  transition-property: height, padding, opacity;
+
+  -webkit-transition-duration: .25s, .25s, .08s;
+  -moz-transition-duration: .25s, .25s, .08s;
+  -o-transition-duration: .25s, .25s, .08s;
+  transition-duration: .25s, .25s, .08s;
+
+  -webkit-transition-delay: 0s, 0s, .05s;
+  -moz-transition-delay: 0s, 0s, .05s;
+  -o-transition-delay: 0s, 0s, .05s;
+  transition-delay: 0s, 0s, .05s;
+}
+#nav li:hover li {
+  opacity: 1;
+  height: 20px;
+  padding: 13px 30px;
 }

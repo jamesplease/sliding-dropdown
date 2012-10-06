@@ -1,9 +1,7 @@
 CSS3 Sliding Dropdown
 ========================
 
-### Under Construction
-
-This is a typical sliding menu. But it's a special sliding menu: it's [semantic][sem] and made only with CSS3.
+This is a familiar sliding navigation menu. But this one's special: it's both [semantic][sem] and entirely CSS3. Baller.
 
 [View it live.][sbc]
 
@@ -12,8 +10,8 @@ This is a typical sliding menu. But it's a special sliding menu: it's [semantic]
 
 ### Compatibility
 
-This is 100% compatible with Chrome, Safari, Opera, and Firefox.
+This works perfectly in all the good browsers: Chrome, Firefox, Safari, and Opera.
 
-This will function on IE6+, but it won't display as nicely in IE as in those other browsers. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). Anyway, the submenu will just 'pop' into existence on IE, instead of sliding.
+IE, on the other hand, falls a bit short. This is because IE still doesn't support CSS3 transitions (come on, Microsoft!). What this means is that the submenu will just 'pop' into existence on IE, instead of sliding.
 
-I hope you like it!
+I hope you like it.
