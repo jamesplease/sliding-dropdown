@@ -79,7 +79,7 @@ http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/
 
 /* The slide */
 
-#nav li li {
+#nav li li a {
   height: 0px;
   padding: 0px 30px;
   opacity: 0;
@@ -98,7 +98,7 @@ http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/
   -o-transition-delay: 0, 0, .05s;
   transition-delay: 0, 0, .05s;
 }
-#nav li:hover li {
+#nav li:hover li a {
   height: 20px;
   padding: 13px 30px;
   opacity: 1;
