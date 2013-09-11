@@ -8,45 +8,46 @@ nav {
   width: 100%;
   height: 45px;
 }
-nav ul {
+ul.slide-menu,
+.slide-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-nav li:hover {
+.slide-menu li:hover {
   background: #2e98d5;
 }
-nav li:hover > a {
+.slide-menu li:hover > a {
   color: #fff;
 }
-nav a {
+.slide-menu a {
   color: #000;
   display: block;
   font-size: 14px;
   text-decoration: none;
   font-family: 'Open Sans', serif;
 }
-nav > ul > li {
+.slide-menu > li {
   float: left;
   position: relative;
 }
-nav > ul > li > a {
+.slide-menu > li > a {
   padding: 13px 30px;
   height: 20px;
 }
-nav > ul > li:hover ul {
+.slide-menu > li:hover ul {
   visibility: visible;
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
 }
-nav > ul > li:hover ul li a {
+.slide-menu > li:hover ul li a {
   height: 20px;
   padding: 13px 30px;
   opacity: 1;
 }
-nav > ul ul {
+.slide-menu ul {
   top: 46px;
   width: 170px;
   position: absolute;
@@ -66,7 +67,7 @@ nav > ul ul {
   -o-transition-delay: .25s;
   transition-delay: .25s;
 }
-nav > ul ul > li > a {
+.slide-menu ul > li > a {
   height: 0;
   padding: 0 30px;
   opacity: 0;

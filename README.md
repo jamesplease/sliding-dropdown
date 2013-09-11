@@ -1,6 +1,6 @@
 CSS3 Sliding Dropdown
 ========================
-*Version 2.0.0*
+*Version 2.1.0*
 
 This is a sliding navigation menu built using only CSS technologies. It was also made to follow the best practices of the [semantic web][sem].
 
@@ -12,6 +12,33 @@ You'll find both the source in both LESS and CSS.
 [example]: http://jmeas.com/github/menu-slide/  "CSS3 Dropdown with Fade"
 
 *Note: This menu can be made to work in legacy versions of IE, but due to the lack of an HTML5 shim the above example will only work in IE9+*
+
+### Usage
+
+Set the `slide-menu` class on an unordered list element.
+
+	<ul class='slide-menu'></ul>
+	
+The children `li` of this menu will be the headers.
+
+	<ul class='slide-menu'>
+	  <li>I'm a header</li>
+	  <li>I'm also a header</li>
+	</ul>
+	
+The immediate children `ul` of your headers will be the items that slide down.
+
+	<ul class='slide-menu'>
+	  <li>
+	    I'm a header
+	    <ul>
+	      <li>I'm the first option of the slide down</li>
+	      <li>I'm the second option</li>
+	    </ul>
+	  </li>
+	</ul>
+
+And that's all there is to it.
 
 ### Compatibility
 
@@ -27,6 +54,11 @@ Even with that, though, IE versions below 10 do not support transitions. What th
 - `grunt min` - Build the LESS, minify the result, then lint it
 
 *Note: The `box-model` rule has been ignored in my linting process. This is because the warning given by the rule has been accounted for in my code.*
+
+### Updates
+
+- *v2.1.0* - Made it more like an OOCSS component, which I hear is all the rage right now.
+- *v2.0.0* - Built with LESS
 
 
 Enjoy!
