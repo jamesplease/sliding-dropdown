@@ -1,19 +1,31 @@
 CSS3 Sliding Dropdown
 ========================
 
-This is a familiar sliding navigation menu. But this one's special: it's both [semantic][sem] and entirely CSS3. Baller.
+This is a sliding navigation menu built using only CSS technologies. It was also made to follow the best practices of the [semantic web][sem].
 
-[View it live.][sbc]
+You'll find both the source in both LESS and CSS.
+
+### [View it live][example]
 
 [sem]: http://en.wikipedia.org/wiki/Semantic_Web "Semantic Web"
-[sbc]: http://jmeas.com/projects/git/dd2/menu.html  "CSS3 Dropdown with Fade"
+[example]: http://jmeas.com/github/menu-slide/  "CSS3 Dropdown with Fade"
+
+*Note: This menu can be made to work in legacy versions of IE, but due to the lack of an HTML5 shim the above example will only work in IE9+*
 
 ### Compatibility
 
-This works perfectly in all the modern browsers: Chrome, Firefox, Safari, Opera, and IE10. It also utilizes the [iOS :hover double-click feature][click].
+The menu works great in the latest versions of the major browsers: Chrome, Firefox, Safari, Opera, and IE10+. It's also built for mobile.
 
-[click]: http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/ "iOS Double Click"
+Legacy versions of IE (< 10), on the other hand, will need a bit of help for the menu to work nicely. For one, you'll need to install the [html5 shim](http://code.google.com/p/html5shim/) for IE < 9 to correctly interpret the HTML.
 
-IE9 and previously, on the other hand, don't support transitions. What this means is that the submenu will just 'pop' into existence instead of sliding.
+Even with that, though, IE versions below 10 do not support transitions. What this means is that the sub-menus will just 'pop' into existence instead of sliding. To include support for those earlier browsers you'll need to use a bit of Javascript. But that goes beyond the scope of this example.
 
-Anyway, I hope you like it.
+### Grunt
+
+- `grunt` - Build the LESS and lint the result
+- `grunt min` - Build the LESS, minify the result, then lint it
+
+*Note: The `box-model` rule has been ignored in my linting process. This is because the warning given by the rule has been accounted for in my code.*
+
+
+Enjoy!
