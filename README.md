@@ -40,6 +40,8 @@ The immediate children `ul` of your headers will be the items that slide down.
 
 And that's all there is to it.
 
+*Note: The `slide-menu` list will collapse to 0 height due to the floating nature of the children. I didn't add a clearfix solution to this source as you likely already have one in your project. Be sure to clearfix your menu or give its parent an explicit height.*
+
 ### Compatibility
 
 The menu works great in the latest versions of the major browsers: Chrome, Firefox, Safari, Opera, and IE10+. It's also built for mobile.
