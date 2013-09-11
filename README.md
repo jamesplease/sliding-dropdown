@@ -1,5 +1,6 @@
 CSS3 Sliding Dropdown
 ========================
+*Version 2.0.0*
 
 This is a sliding navigation menu built using only CSS technologies. It was also made to follow the best practices of the [semantic web][sem].
 
